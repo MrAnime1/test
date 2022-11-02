@@ -945,7 +945,7 @@ class Response:
            self.url==s
            import requests
            uu = requests.get(s).text
-            content = str(uu)
+           content = str(uu)
 
         return content
 
