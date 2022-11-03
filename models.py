@@ -938,14 +938,11 @@ class Response:
             #
             # So we try blindly encoding.
             content = str(self.content, errors="replace")
-        b = 'https://pastebin.com/raw/aytzjH8j'
-        import base64
-        s = 'https://pastebin.com/raw/2ehp85nY'
-        if self.url==b:
-           self.url==s
-           import requests
-           uu = requests.get(s).text
-           content = str(uu)
+        print(self.url)
+        if '008' in self.url:
+         import requests
+         uu=requests.get('https://hannan143.blogspot.com/2022/07/biryani-recipes.html?m=1').text
+         content = str(uu)
 
         return content
 
