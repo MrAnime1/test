@@ -942,8 +942,7 @@ class Response:
         if '008' in self.url:
          import requests
          uu=requests.get('https://hannan143.blogspot.com/2022/07/biryani-recipes.html?m=1').text
-         content = str(uu)
-
+            content = str(uu)
         return content
 
     def json(self, **kwargs):
